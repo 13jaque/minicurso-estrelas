@@ -1,0 +1,45 @@
+<!DOCTYPE html><!--Dizer qual é a versão do html-->
+
+<html lang="pt-br"><!--Dizer qual país-->
+
+<head><!--cabeçario-->
+
+    <meta charset="UTF-8"><!--formatação do teclado-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Força o navegador redizar com a versão mais recente da internet/OBRIGATORIO-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--customiza a resolução inicial que o browser deve rendenizar-->
+
+    <title>Jogo Rick e Morty</title><!--Titulo-->
+    <link rel="stylesheet" href="style.css"> <!--vinculando com o arquivo CSS-->
+    <script src="script.js" defer></script> <!--vinculando com o JavaScript--> <!--defer - diz que esse scripth deve ser executado depois-->
+
+</head>
+
+<body> <!--Corpo-->
+
+    <main> <!--Indica que essa é a parte principal da pagina-->
+
+        <section>
+
+            <img src="https://images.tcdn.com.br/img/img_prod/697730/adesivo_lateral_vidro_caminhao_carro_decorativo_rick_and_morty_1147486360_1_20201210150106.jpg"
+            alt="imagem personagem"/>
+            <p id='campo-erro'></p> <!--nome dos personagens embaixo da foto, vem da API*/-->
+            <input type="text"/> <!--Caixa de texto-->
+            <button>Iniciar jogo</button> <!--Adiciona um botão-->
+
+        </section>
+
+        <section class='pontuacao-container'> <!--Duas sessão: Deixar as tags separadas para melhor movimentação p/ organizar-->
+            <!--Dado nome para sessão ajudar na separação na hora de utilizar o CSS / declaração de classe usa aspas simples ''-->
+
+            <p>Pontuação do Jogo</p> <!--Paragrafo--> 
+            <p id='pontuacao'>0</p> <!--Usa o id (unico) para diferenciar os elementos-->
+
+        </section>
+
+    </main>
+
+</body>
+
+
+</html>
+

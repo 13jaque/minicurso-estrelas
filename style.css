@@ -1,0 +1,94 @@
+/*Dando estilo para o body/corpo*/
+body {
+    margin: 0;
+    width: 100%; /*largura - Pegar a tela inteira do navegador*/
+    min-height: 100vh; /*altura*/
+    background-image: linear-gradient(  /*degrader de cores*/
+        180deg,
+        #2f6ed3 5%,
+        #5095e4 20%,
+        #5095e4 60%,
+        #2f6ed3 95%
+    );
+}
+
+/*Dando estilo para o main/parte principal*/
+main{
+    align-items: center; /*centraliza tudo que esta na tags MAIN no centro*/
+    display: flex; /*posição dos elementos são flexiveis*/
+    height: 100vh; /*altura do bloco*/
+    justify-content: center; /*centralizar/justificar ainda mais no centro de forma relativa*/
+    position: relative;
+}
+
+/*Organizando a imagem*/
+main > section img {
+    width: 300px; /*largura da foto*/
+    height: 300px; /*altura da foto*/
+    /*margin: 15px; /*margem da imagem na borda de cima - imagem pra baixo*/
+}
+
+/*Arrumando o botão*/
+main > section button {
+    cursor: pointer;
+    border-radius: 4px; /*deixa o botão com as bordas redondas*/
+    background-color: #80afe7; /*mudar a cor do botão*/
+    color: white; /*muda a cor da fonte*/
+    font-family: ​EuclidBold; /*muda a cor da fonte*/
+    font-size: 12px; /*tamanho da fonte*/
+    font-weight: 700px; /*Engorda a fonte*/
+    letter-spacing: -.6px;/*espaço entre as letras*/
+    line-height: 15px; /*Alinha a fonte/texto dentro do botão*/
+    text-transform: uppercase; /*deixa a letra em maisculo*/
+    padding: 9px 23px; /*distância da palavra com as bordas do botão*/
+    border: none;/*tirar a borda*/
+    margin: 15px 0 0; /*distância o botão do resto dos elementos*/
+}
+
+/*Arrumando a caixa de texto */
+main > section input {
+    height: 30px; /*altura*/
+    width: 90%;/*largura - ajusta dentro do bloco mais claro/menor*/
+    margin: 30px 0; /*distância a caixa de texto com a margem do outro elemento mais proximo*/
+    border-radius: 4px; /*deixa a caixa de texto com as bordas redondas*/
+    border: none; /*tirar a borda*/
+    opacity: 0;/*some o caixa de texto*/
+    padding: 4px;/*distância entre as bordas da caixa*/
+    transition: 0.3s;
+}
+
+/*colocando o ponto mostra que essa proxima ajuste no CSS é uma classe  / ajustando a pontuação do jogo*/
+.pontuacao-container {
+    display: none;/*none some os elementos - desligado*/
+    flex-direction: column;/*direção dos elementos dentro da sessão/ organizados um do lado do outro "column"*/
+    align-items: center;/*alinhando os elementos no centro*/
+    justify-content: center;/*todos elementos no centro*/
+    position: absolute;/*posição que os elementos for ficar na tela sempre sera a mesma*/
+    right: 100px; /*conteudo é alinhado na borda direita do box/direta-para-esquerda*/
+}
+
+/*Mexendo nos elementos do paragrafo*/
+.pontuacao-container p {
+    color: white; /*cor da fonte*/
+    margin: 5px 0; /*distância entre resto dos elementos*/
+
+
+}
+
+/*mexendo a pontuação que não é a .pontuacao-container*/
+main > section:not(.pontuacao-container) {
+    align-items: center; /*alinhando os elementos no centro*/
+    display: flex; /*flexivel - pode esta em todos os lugares da tela*/
+    flex-direction: column; /*direção dos elementos dentro da sessão/ organizados um do lado do outro "column"*/
+    justify-content: center;
+    font-size: 15px; /*tamanho da fonte*/
+    background: rgba(255, 255, 255, 0.25); /*fundo com cor na sessão*/
+    width: 500px; /*largura*/
+    height: 500px; /*altura*/
+    border-radius: 10px; /*deixa a caixa de texto com as bordas redondas*/
+    border: 1px solid rgba(255, 255, 255, 0.18); /*borda da foto + cor*/
+    box-shadow: 0 8px 32px 0 aquamarine; /*sombra nas bordas externas*/
+    
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);/*deixar embaçado*/
+}
